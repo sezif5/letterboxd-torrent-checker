@@ -1,0 +1,99 @@
+/* Стили для бейджа Rutracker на Letterboxd */
+
+.rutracker-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  font-family: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  vertical-align: middle;
+}
+
+/* Состояние загрузки */
+.rutracker-badge.loading {
+  background-color: #556677;
+  color: #ffffff;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+/* Найдено */
+.rutracker-badge.found {
+  background-color: #00c030;
+  color: #ffffff;
+}
+
+.rutracker-badge.found:hover {
+  background-color: #00a028;
+  transform: scale(1.05);
+}
+
+/* Не найдено */
+.rutracker-badge.not-found {
+  background-color: #ee3333;
+  color: #ffffff;
+}
+
+.rutracker-badge.not-found:hover {
+  background-color: #cc2222;
+  transform: scale(1.05);
+}
+
+/* Требуется авторизация */
+.rutracker-badge.auth {
+  background-color: #ff9900;
+  color: #ffffff;
+}
+
+.rutracker-badge.auth:hover {
+  background-color: #e68a00;
+  transform: scale(1.05);
+}
+
+/* Ошибка */
+.rutracker-badge.error {
+  background-color: #888888;
+  color: #ffffff;
+}
+
+.rutracker-badge.error:hover {
+  background-color: #666666;
+  transform: scale(1.05);
+}
+
+/* ========== Стили для списков и watchlist ========== */
+
+/* Контейнер бейджа на постере */
+.rutracker-badge-container {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  z-index: 100;
+}
+
+/* Компактный бейдж для карточек */
+.rutracker-badge.compact {
+  margin-left: 0;
+  padding: 3px 6px;
+  font-size: 10px;
+  border-radius: 3px;
+  min-width: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.rutracker-badge.compact:hover {
+  transform: scale(1.1);
+}
