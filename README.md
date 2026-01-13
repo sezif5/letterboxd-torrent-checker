@@ -2,6 +2,9 @@
 
 Расширение для Firefox, которое показывает наличие фильмов на Rutracker прямо на сайте Letterboxd.
 
+<img src="https://github.com/user-attachments/assets/3e49924b-9dd0-490e-923e-9c245c68f551" alt="Image" width="700" />
+
+
 ## Что делает расширение?
 
 Когда вы просматриваете фильмы на сайте [Letterboxd.com](https://letterboxd.com), расширение автоматически проверяет, есть ли этот фильм на торрент-трекере Rutracker, и показывает результат в виде небольшого значка.
