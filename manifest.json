@@ -3,6 +3,15 @@
   "name": "Letterboxd Rutracker Checker",
   "version": "1.0",
   "description": "Проверяет наличие фильма на Rutracker прямо на странице Letterboxd",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "letterboxd-rutracker-checker@vladik005",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
   "permissions": [
     "*://rutracker.me/*"
   ],
@@ -18,7 +27,7 @@
     "scripts": ["background.js"]
   },
   "icons": {
-    "48": "icons/icon.svg",
-    "96": "icons/icon.svg"
+    "48": "icon.svg",
+    "96": "icon.svg"
   }
 }
